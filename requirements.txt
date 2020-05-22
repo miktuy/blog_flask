@@ -3,5 +3,8 @@ flask-sqlalchemy
 flask-migrate
 flask-script
 flask-admin
+flask-security
 mysql-connector
 wtforms
+email_validator
+bcrypt
