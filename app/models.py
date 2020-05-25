@@ -45,7 +45,11 @@ class Tag(db.Model):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.slug = slugify(self.name)
+        # self.slug = slugify(self.name)
+
+    def generate_slug(self):
+        if self.title:
+            self.slug = slugify(self.title)
 
     def __repr__(self):
         return f'{self.name}'
